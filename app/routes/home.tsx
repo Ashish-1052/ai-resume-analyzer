@@ -22,8 +22,8 @@ export default function Home() {
   }, [auth.isAuthenticated]);
   return (
     <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+      <Navbar />
       <section className="main-section">
-        <Navbar />
         <div className="page-heading py-[16px]">
           <h1>Track your applications & resume ratings</h1>
           <h2>Review your submissions and check AI-powered feedback</h2>
