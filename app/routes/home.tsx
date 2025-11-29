@@ -48,7 +48,7 @@ export default function Home() {
       {!loadingResumes && resumes?.length === 0 && (
         <div className="flex flex-col items-center justify-center mt-10 gap-4">
           <p>No Resumes Found</p>
-          <Link to="/upload" className="primary-button">Upload Resume</Link>
+          <Link to="/upload" className="primary-button !w-[160px]">Upload Resume</Link>
         </div>
       )} 
       {!loadingResumes && resumes?.length > 0 &&
