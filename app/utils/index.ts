@@ -1,3 +1,7 @@
+import type { ClassValue } from "clsx";
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
+
 export function formatBytes(bytes: number, decimals = 2): string {
   if (bytes === 0) return "0 Bytes";
 
@@ -9,3 +13,7 @@ export function formatBytes(bytes: number, decimals = 2): string {
 }
 
 export const generateUUID = () => crypto.randomUUID();
+
+export function cn(...args: ClassValue[]) {
+  return twMerge(clsx(...args));
+}
