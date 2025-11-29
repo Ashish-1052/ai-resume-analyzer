@@ -136,9 +136,9 @@ export const AIResponseFormat = `
     }`;
 
 export const prepareInstructions = ({
-                                      jobTitle,
-                                      jobDescription,
-                                    }: {
+  jobTitle,
+  jobDescription,
+}: {
   jobTitle: string;
   jobDescription: string;
 }) =>
@@ -147,7 +147,7 @@ export const prepareInstructions = ({
   The rating can be low if the resume is bad.
   Be thorough and detailed. Don't be afraid to point out any mistakes or areas for improvement.
   If there is a lot to improve, don't hesitate to give low scores. This is to help the user to improve their resume.
-  If available, use the job description for the job user is applying to to give more detailed feedback.
+  If available, use the job description for the job user is applying to give more detailed feedback.
   If provided, take the job description into consideration.
   The job title is: ${jobTitle}
   The job description is: ${jobDescription}
